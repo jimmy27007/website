@@ -1,0 +1,244 @@
+/*stylesheet*/
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{/*navigation bar*/
+    background-color: maroon;
+    height: 70px;
+
+   
+    
+    
+}
+.div1{/*division bar styles*/
+    font-size: 50px;
+    float: left;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: gold;
+    padding-left: 10px;
+    height: 50px;
+    animation: rotate;
+    animation-iteration-count: unset;
+    animation-play-state: running;
+    animation-duration: 0.75s;
+    animation-timing-function: linear;
+}
+body{/*body styles*/
+ background-image: url("C:\\Users\\james\\Desktop\\HTML FILES\\banner-bg.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: left;
+ background-attachment: fixed;
+}
+nav ul li{/*navigation, unodered list, list style*/
+    float: left;
+    display: block;
+    padding-left: 60px;
+    text-decoration: none;
+    position: relative;
+    padding-top: 30px;
+}
+nav ul li a{/*navigation, unodered list, list, anchor styles */
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 30px; 
+    color: gold; 
+}
+nav ul li a:hover{
+    background-color: gold;
+    color: black;
+}
+nav ul li ul {/*navigation, unodered lists, lists , unodered lists styles*/
+    position: absolute;
+    display: none;
+    border-style: solid;
+    background-color: maroon;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-width: 20px;
+    border-color: maroon;
+    width: 225px;
+    height: 400px;
+    padding-right:0px;
+    opacity: 90%;
+
+  
+}
+nav ul li:hover ul {/*navigation, unodered lists, lists hover, unodered lists styles*/
+    display: block;
+    
+    
+    
+}
+nav ul li ul li{/*navigation, unodered list, lists, unodered list, list styles*/
+    padding-top: 30px;
+    padding-left: 20px;
+    border-style: solid;
+    border-width: 0px;
+    
+}
+nav ul li ul li a{/*navigation, unodered lists , lists, unodered list, anchor hover styles*/
+   color: white;
+   font-size: 30px;
+}
+nav ul li ul li a:hover{/*navigation, unodered lists , lists, unodered lists, lists, anchor hover styles*/
+    background-color: gold;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right:var(a);
+   
+}
+.mother:hover{/*mother class hover styles*/
+    animation: colorchange;
+    animation-duration:0.6s;
+    animation-iteration-count: unset;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-play-state: running;
+}
+   @keyframes rotate{/* rotate animation styles*/
+    100%{transform: rotateZ(360deg);}
+   
+   }
+   @keyframes colorchange{/*colorchange animation styles*/
+    50%{background-color: gold;}
+    50%{background-color: white;}
+   }
+   .left_img{
+    height: 200px;
+    width: 200px;
+    float: left;
+    border-radius: 100px;
+    animation: left_img_rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 0s;
+   }
+   .right_img{
+    height: 200px;
+    width: 200px;
+    float: right;
+    border-radius: 100px;
+    animation: right_img_rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 0s;
+    
+   }
+   h1{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 10px 0px  grey;
+    font-size: 80px;
+    background-image: linear-gradient(gold);
+   }
+   .p2{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size:50px ;
+    text-align: center;
+    background-color: transparent;
+    animation: changecolor;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-play-state: running;
+    border-style: solid;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+   }
+   @keyframes left_img_rotate{
+    100%{transform: rotateZ(360deg);}
+   }
+   @keyframes right_img_rotate{
+    100%{transform: rotateZ(-360deg);}
+   }
+   @keyframes changecolor{
+    0%{background-color: #00ffff;}
+    2%{background-color: #000000;}
+    4%{background-color: #0000ff;}
+    6%{background-color: #ff00ff;}
+    8%{background-color: #008000;}
+    10%{background-color: #808080;}
+    12%{background-color: #00ff00;}
+    14%{background-color: #800000;}
+    16%{background-color: #000080;}
+    18%{background-color: #808000;}
+    20%{background-color: #800080;}
+    21%{background-color: #ff0000;}
+    22%{background-color: #c0c0c0;}
+    24%{background-color: #008080;}
+    26%{background-color: #ffffff;}
+    28%{background-color: #ffff00;}
+    30%{background-color: #f0f8ff;}
+    32%{background-color: #faebd7;}
+    34%{background-color: #7fffd4;}
+    36%{background-color: #f0ffff;}
+    38%{background-color: #f5f5dc;}
+    40%{background-color: #ffe4c4;}
+    42%{background-color: #ffebcd;}
+    44%{background-color: #8a2be2;}
+    46%{background-color: #a52a2a;}
+    48%{background-color: #deb887;}
+    50%{background-color: #5f9ea0;}
+    52%{background-color: #7fff00;}
+    54%{background-color: #d2691e;}
+    56%{background-color: #ff7f50;}
+    58%{background-color: #6495ed;}
+    60%{background-color: #fff8dc;}
+    62%{background-color: #dc143c;}
+    64%{background-color: #00ffff;}
+    66%{background-color: #00008b;}
+    68%{background-color: #008b8b;}
+    70%{background-color: #b8860b;}
+    72%{background-color: #a9a9a9;}
+    74%{background-color: #006400;}
+    78%{background-color: #bdb76b;}
+    80%{background-color: #8b998b;}
+    82%{background-color: #556b2f;}
+    84%{background-color: #ff8c00;}
+    86%{background-color: #9932cc;}
+    88%{background-color: #8b0000;}
+    90%{background-color: #e9937a;}
+    92%{background-color: #8fbc8f;}
+    94%{background-color: #483d8b;}
+    96%{background-color: #2f4f4f;}
+    98%{background-color: #00ced1;}
+    100%{background-color: #9400d3;}
+    
+   }
+   footer{
+    background-color: gold;
+    margin-top: 500px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    border-style: solid;
+    
+   }
+   .div2{
+    border-style: solid;
+    border-radius: 50px;
+    background-image: url("C:\\Users\\james\\Desktop\\HTML FILES\\slider-img.jpg");
+    margin-bottom: 0px;
+    height: 1000px;
+    border-radius: 0px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    opacity: 20%;
+    margin-top: 150px;
+   }
+
+
